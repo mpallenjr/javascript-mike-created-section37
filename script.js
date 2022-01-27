@@ -106,3 +106,27 @@ const fruitProcessor = function (apples, oranges) {
 console.log(fruitProcessor(2,3));
 // the 2 and 3 in fruit processor on ~106 link to ~97 apples and oranges, which link to apples in apple in cutpieces, replacing the fruit placeholder in cutpieced above, then being multiplied by 4, storing 8 in applePieces, to be rendered in juice. 
 */
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+if(retirement > 0) {
+  console.log(`${firstName} retires in ${retirement} years`)
+  return retirement;
+} else {
+  console.log('This person has already retired 🎉')
+  return -1; // if youre working with numbers its best to use a number here opposed to a string when programming. 
+}
+ // return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirement(1986, 'Mike'));
+console.log(yearsUntilRetirement(1940, 'Jonas'));
+
+
+
